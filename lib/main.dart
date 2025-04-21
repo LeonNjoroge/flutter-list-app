@@ -12,9 +12,28 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.blue,
           title: const Text('Flutter is Fun!'),
             ),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
+
+          children: const
+          [
+            Icon(Icons.backpack),
+            Icon(Icons.leaderboard),
+            Icon(Icons.person)
+          ],
+        // Center(
+        //   child: Container(
+        //     margin: const EdgeInsets.all(100),
+        //     padding: const EdgeInsets.all(10),
+        //     height: 100,
+        //     width: 100,
+        //     child: const Text('Hi Mom 🐣'),
+        //   ),
+        ),
       )
     );
   }
